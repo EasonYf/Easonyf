@@ -1,0 +1,13 @@
+import{_ as n}from"./plugin-vue_export-helper-c27b6911.js";import{o as s,c as a,d as e}from"./app-55302f36.js";const p={},t=e(`<h2 id="圆的面积" tabindex="-1"><a class="header-anchor" href="#圆的面积" aria-hidden="true">#</a> 圆的面积</h2><p>:::tips 计算圆的面积的公式定义为 A=πR2 请利用这个公式计算所给圆的面积。 π的取值为 3.14159</p><p>输入格式 输入包含一个浮点数，为圆的半径 R</p><p>输出格式 输出格式为 A=X，其中 X 为圆的面积，用浮点数表示，保留四位小数。</p><p>数据范围 0&lt;R&lt;10000.00 输入样例： 2.00 输出样例： A=12.5664 :::</p><ul><li>思路：采用宏定义，定义Π=3.14159，运用公示直接算出即可（答案保留4位小数）</li></ul><div class="language-cpp line-numbers-mode" data-ext="cpp"><pre class="language-cpp"><code><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;iostream&gt;</span></span>
+
+<span class="token keyword">using</span> <span class="token keyword">namespace</span> std<span class="token punctuation">;</span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">define</span> <span class="token macro-name">pai</span> <span class="token expression"><span class="token number">3.14159</span></span></span>
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    <span class="token keyword">double</span> r<span class="token punctuation">;</span>
+    cin <span class="token operator">&gt;&gt;</span> r<span class="token punctuation">;</span>
+    <span class="token keyword">double</span> s <span class="token operator">=</span> pai <span class="token operator">*</span> r <span class="token operator">*</span> r<span class="token punctuation">;</span>
+    <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;A=%.4f&quot;</span><span class="token punctuation">,</span>s<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>`,7),c=[t];function o(i,l){return s(),a("div",null,c)}const u=n(p,[["render",o],["__file","相应题目1.html.vue"]]);export{u as default};
